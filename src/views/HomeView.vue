@@ -5,12 +5,16 @@
         <div class="container search">
           <div class="row justify-content-lg-center">
             <div class="col d-flex justify-content-center">
-              <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+              <input  @keydown.enter="onSubmit1" type="text" class="form-control" placeholder="Search" aria-label="Search"
                 aria-describedby="button-addon2" v-model="search">
               <button @click="onSubmit1" class="btn btn-outline-secondary" type="button"
                 id="button-addon2">Search</button>
-              <el-pagination layout="prev, pager, next" :total="this.page_total"
-                v-model:current-page="this.pages_select" @click="onSubmit1" />
+            </div>
+            <div class="row justify-content-lg-center">
+              <div class="col d-flex justify-content-center">
+                <el-pagination layout="prev, pager, next" :total="this.page_total"
+                  v-model:current-page="this.pages_select" @click="onSubmit1" />
+              </div>
             </div>
           </div>
         </div>

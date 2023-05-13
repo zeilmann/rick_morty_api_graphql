@@ -35,6 +35,11 @@
       </div>
     </div>
   </div>
+  <div class="about" style="text-align: center;">
+    <h2>
+      created by Augusto Zeilmann
+    </h2>
+  </div>
 </template>
 
 <script>
@@ -158,4 +163,6 @@ export default {
 
   padding: 10px;
 }
+
+
 </style>

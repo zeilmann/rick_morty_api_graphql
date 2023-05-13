@@ -164,5 +164,9 @@ export default {
   padding: 10px;
 }
 
+.about {
+  background-color: aqua;
+}
+
 
 </style>
